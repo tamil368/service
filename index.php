@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="assets/css/styles.css">
 
         <!-- =====BOX ICONS===== -->
-        <link href='index.css' rel='stylesheet'>
+        <link rel='stylesheet' type='text/stylesheet' href='public/index.css'>
 
         <title>sai catering service</title>
         <link rel="icon" type="image/x-icon" href="img/im.png">
