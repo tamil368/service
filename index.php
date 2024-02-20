@@ -10,7 +10,7 @@
         <link href='index.css' rel='stylesheet'>
 
         <title>sai catering service</title>
-        <link rel="icon" type="image/x-icon" href="im.png">
+        <link rel="icon" type="image/x-icon" href="img/im.png">
     </head>
     <body>
         <script src="main.js"></script>
@@ -18,7 +18,7 @@
         <header class="l-header">
             <nav class="nav bd-grid" id="navbar">
                 <div>
-                    <img src="im.png" width="150" height="60" border-radius="40px">
+                    <img src="img/im.png" width="150" height="60" border-radius="40px">
                 </div>
         
                 <div class="nav__menu" id="nav-menu">
@@ -62,9 +62,9 @@
 
                 <div class="home__img">
                 
-                    <img src="v1.jpg" width="350" height="450">
+                    <img src="img/v1.jpg" width="350" height="450">
                     
-                    <img src="v2.jpg" width="350 " height="450">
+                    <img src="img/v2.jpg" width="350 " height="450">
                  </div>
             </section>
                  <!--===== ABOUT =====-->
