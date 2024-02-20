@@ -1,5 +1,7 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
@@ -35,6 +37,7 @@
   }
 }
 
+
 /*===== BASE =====*/
 *, ::before, ::after {
   box-sizing: border-box;
@@ -68,7 +71,6 @@ a {
 }
 
 
-
 /*===== CLASS CSS ===== */
 .section-title {
   position: relative;
@@ -96,6 +98,7 @@ a {
   padding-bottom: 2rem;
 }
 
+
 /*===== LAYOUT =====*/
 .bd-grid {
   max-width: 1024px;
@@ -113,6 +116,7 @@ a {
   background-color: #fff;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
+
 
 /*===== NAV =====*/
 .nav {
@@ -169,6 +173,7 @@ a {
   cursor: pointer;
 }
 
+
 /*Active menu*/
 .active::after {
   position: absolute;
@@ -180,10 +185,12 @@ a {
   background-color: var(--first-color);
 }
 
+
 /*=== Show menu ===*/
 .show {
   right: 0;
 }
+
 
 /*===== HOME =====*/
 .home {
@@ -236,6 +243,7 @@ a {
   width: 360px;
 }
 
+
 /*BUTTONS*/
 button {
   border-radius: 4px;
@@ -278,6 +286,7 @@ button:hover:after {
   right: 10px;
 }
 
+
 /* ===== ABOUT =====*/
 .about__container {
   row-gap: 2rem;
@@ -296,6 +305,7 @@ button:hover:after {
   width: 200px;
   border-radius: .5rem;
 }
+
 
 /* ===== SKILLS =====*/
 .skills__container {
@@ -364,6 +374,7 @@ button:hover:after {
   border-radius: .5rem;
 }
 
+
 /* ===== WORK =====*/
 .work__container {
   row-gap: 2rem;
@@ -382,6 +393,7 @@ button:hover:after {
 .work__img img:hover {
   transform: scale(1.1);
 }
+
 
 /* ===== CONTACT =====*/
 .contact__input {
@@ -465,6 +477,7 @@ button:hover:after {
 .footer__copy {
   font-size: var(--smaller-font-size);
 }
+
 
 /* ===== MEDIA QUERIES=====*/
 @media screen and (max-width: 320px) {
