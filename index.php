@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <!-- =====BOX ICONS===== -->
-    <link rel='stylesheet' type='text/stylesheet' href='public/index.css'>
+    <link rel='stylesheet' href='public/index.css'>
 
-    <title>sai catering service</title>
+    <title>SAI Catering Service</title>
     <link rel="icon" type="image/x-icon" href="img/im.png">
 </head>
 
@@ -51,8 +51,9 @@
         <!--===== HOME =====-->
         <section class="home bd-grid" id="home">
             <div class="home__data">
-                <h1 class="home__title"><br> <span class="home__title-color">sai catering service</span><br>
-                    nedamangalam</h1>
+                <h1 class="home__title"><br> <span class="home__title-color"> SAI Catering Service </span><br>
+                    
+                <span> NEEDAMANGALAM </span></h1>
 
                 <button><a href="#contact" class="button">Contact</a></button>
             </div>
