@@ -1,0 +1,56 @@
+<?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
+
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Extract form data
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+
+    // Include PHPMailer autoload file
+    require 'PHPMailer\composer.json';
+    require 'PHPMailer\src\OAuthTokenProvider.php';
+    
+
+    // Create a PHPMailer instance
+    $mail = new PHPMailer(true);
+
+    try {
+        // Server settings
+        $mail->SMTPDebug = SMTP::DEBUG_SERVER; // Enable verbose debug output
+        $mail->isSMTP(); // Send using SMTP
+        $mail->Host = 'smtp.gmail.com';  // Set the SMTP server to send through
+        $mail->SMTPAuth = true;   // Enable SMTP authentication
+        $mail->Username = 'mkramprasath12@gmail.com';   // SMTP username
+        $mail->Password = 'Ram@053.';   // SMTP password
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Enable implicit TLS encryption
+        $mail->Port = 465; // TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+
+        // Recipients
+        $mail->setFrom('mkramprasath12@gmail.com', 'Mailer');
+        $mail->addAddress($email); // Add a recipient
+       // $mail->addAddress('ellen@example.com'); // Name is optional
+        // $mail->addReplyTo('info@example.com', 'Information');
+        // $mail->addCC('cc@example.com');
+        // $mail->addBCC('bcc@example.com');
+
+        // Content
+        $mail->isHTML(true); // Set email format to HTML
+        $mail->Subject = 'New message from ' . $name;
+        $mail->Body = 'Name: ' . $name . '<br>Email: ' . $email . '<br>Message: ' . $message;
+        $mail->AltBody = 'Name: ' . $name . '\nEmail: ' . $email . '\nMessage: ' . $message;
+
+        // Send the email
+        $mail->send();
+        echo 'Message has been sent';
+    } catch (Exception $e) {
+        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    }
+}
+?>
