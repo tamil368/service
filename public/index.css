@@ -52,7 +52,6 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
- 
 }
 
 h1, h2, p {
@@ -67,7 +66,6 @@ ul {
 
 a {
   text-decoration: none;
-
 }
 
 
